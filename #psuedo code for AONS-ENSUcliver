@@ -1,0 +1,13 @@
+#psuedo code for AONS-ENSUcliver
+
+call:
+C:\Windows\system32> AONS-ENSU_CLIv.bat "C:\game folder path" "game name" "D/N"
+
+only use D or N (case insensitive?). program will only use Dsound or nonDsound 
+update.zip
+
+The update.zip must be in the installation folder, and D or N must be
+specified. I'm cutting out the annoying detection code. It doesn't work for a 
+cli util anyways.
+
+all other operation should be the same, minus the lack of feedback. 
