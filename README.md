@@ -2,11 +2,17 @@
  A batch file tool to automate the process of updating old ONScripter-EN executables. 
  
  This batch file requires a zip archive with the necessary contents to update the Old ONS-EN installation. Get one from kaisernet.org
- This should run on any windows system, post Win2000. 
+ This should run on any windows system, post Windows 2000. 
  
- This script will ask for user input to determine the game directory, and the game name. If there is no zip archive that matches the most name of the 
- most up-to-date ONS-EN zip archives, it will also ask the user choose another zip archive, by specifying it's name.
- In the unlikely event that both of the most up-to-date ONS-EN zip archives are present, the script will ask the user to pick one.
+DEPENDENCIES:
+unzip.exe (https://sourceforge.net/projects/infozip/files/UnZip%206.x%20%28latest%29/UnZip%206.0/)
+
+This is a commandline utility, and is called
+AONS-ENSU_CLIv2.0 "<full game folder  path>" "<name of game>" <d or n>
+
+all three flags are MANDATORY. the quotes are not mandatory, but if the game folder path, or the game name have spaces in them, please surround them with quotes.
+
+ other than it being a commandline utility without even a TUI, this is the same as AONS-ENSU
  
  This script does not automatically rename the updated ONS-EN executable
  
