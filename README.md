@@ -7,8 +7,8 @@
 DEPENDENCIES:
 unzip.exe (https://sourceforge.net/projects/infozip/files/UnZip%206.x%20%28latest%29/UnZip%206.0/)
 
-This is a commandline utility, and is called
-AONS-ENSU_CLIv2.0 "<full game folder  path>" "<name of game>" <d or n>
+This is a commandline utility, and is called like so
+AONS-ENSU_CLIv2.0 "[full game folder  path]" "[name of game]" [d or n]
 
 all three flags are MANDATORY. the quotes are not mandatory, but if the game folder path, or the game name have spaces in them, please surround them with quotes.
 
