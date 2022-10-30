@@ -21,6 +21,19 @@ set GI=%~2
 if /I "%3" == "d" ( set ONS_N=onscripter-en-win32_dsound-20110628.zip )
 if /I "%3" =="n" ( set ONS_N=onscripter-en-win32-20110628.zip )
 
+pause
+Set umi=%GI:umineko=%
+pause
+
+set umiFound=false 
+set umiCheck=a
+
+if /I "%umi%"=="%GI%" set umiCheck=b 
+
+if /I %umiCheck%==a set umiFound=true
+echo umiFound=%umiFound% & echo umiCheck=%umiCheck% & pause
+
+
 
 call :SubDirAndTxt
 ::SubDirAndTXT enters the game directory, creates ons.cfg, a savedata folder in the game directory, 
@@ -69,6 +82,7 @@ cd %WD%
 type nul > ons.cfg
 
 echo save=%WD%\savedata > ons.cfg
+if %umiFound%==true echo png-nsc-mask>>ons.cfg 
 
 type nul > game.id
 
